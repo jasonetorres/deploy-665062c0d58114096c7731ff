@@ -377,6 +377,52 @@ input, select, textarea {
 					}
 
 		}
+		/* Adjust form fields to stack vertically */
+#newsletter-form .fields {
+    display: flex;
+    flex-direction: column;
+}
+
+#newsletter-form .field {
+    margin-bottom: 1em; /* Adjust spacing between fields */
+}
+
+#newsletter-form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+#newsletter-form input[type="text"],
+#newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#newsletter-form .actions {
+    margin-top: 1em; /* Adjust spacing between fields and submit button */
+}
+
+#newsletter-form input[type="submit"].primary {
+    background-color: #ffffff;
+    color: #007bff; /* Adjust text color */
+    border: none;
+    padding: 0.75em 1em; /* Adjust padding to make the button thinner */
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+    display: block; /* Ensures the button takes full width */
+    margin: 0 auto; /* Centers the button horizontally */
+    text-align: center; /* Centers the text inside the button */
+}
+
+
+#newsletter-form input[type="submit"].primary:hover {
+    background-color: #504d4d;
+}
+
 
 	label {
 		color: #ffffff;
